@@ -11,18 +11,18 @@ The PASC Computable Phenotype (CP) is intended to identify pediatric patients wi
 Steps of the CP are as follows:
 
 1) Identify cohorts eligible for assessment:  
-    a) Patients with COVID-19 infection: clinical diagnosis or PCR, antigen, or nucleocapsid serology test
-    b) Age < 21 years at COVID-19 infection date
-    c) Sufficient follow up: $\geq$ 2 encounters with health system between 28-179 post-COVID-19 infection
+    1) Patients with COVID-19 infection: clinical diagnosis or PCR, antigen, or nucleocapsid serology test
+    2) Age < 21 years at COVID-19 infection date
+    3) Sufficient follow up: $\geq$ 2 encounters with health system between 28-179 post-COVID-19 infection
 2) Classify patients as having conclusive, probable, or no evidence of Long COVID as follows:
-        a) **Conclusive:** 
-                - 2+ PASC or MISC diagnoses (on separate dates)
-        b) **Probable:**
-                - 1 PASC or MISC diagnosis OR
-                - $\geq$ 2 [symptom cluster](rules_application/specs/cluster_master_pasc.csv) diagnoses separated by $\geq$ 30 days
-                            - Note: respiratory and fever diagnoses are removed if occur within 14 days of another, non-COVID-19 respiratory infection
-                            - Note: apply a [washout period](rules_application/specs/cluster_master_pasc_washout.csv) (30 days or 2 years, dependent on acute or chronic condition type) for conditions present prior to COVID-19 infection
-        c) **No evidence:** Does not meet the "conclusive" or "probable" classifications
+    1) **Conclusive:** 
+        - 2+ PASC or MISC diagnoses (on separate dates)
+    2) **Probable:**
+        - 1 PASC or MISC diagnosis OR
+        - $\geq$ 2 [symptom cluster](rules_application/specs/cluster_master_pasc.csv) diagnoses separated by $\geq$ 30 days
+            - Note: respiratory and fever diagnoses are removed if occur within 14 days of another, non-COVID-19 respiratory infection
+                - Note: apply a [washout period](rules_application/specs/cluster_master_pasc_washout.csv) (30 days or 2 years, dependent on acute or chronic condition type) for conditions present prior to COVID-19 infection
+    3) **No evidence:** Does not meet the "conclusive" or "probable" classifications
 
 # Code Execution
 
