@@ -10,10 +10,10 @@ The PASC Computable Phenotype (CP) is intended to identify pediatric patients wi
 
 Steps of the CP are as follows:
 
-1) Identify cohorts eligible for assessment:
-        a) Patients with COVID-19 infection: clinical diagnosis or PCR, antigen, or nucleocapsid serology test
-        b) Age < 21 years at COVID-19 infection date
-        c) Sufficient follow up: $\geq$ 2 encounters with health system between 28-179 post-COVID-19 infection
+1) Identify cohorts eligible for assessment:  
+    a) Patients with COVID-19 infection: clinical diagnosis or PCR, antigen, or nucleocapsid serology test
+    b) Age < 21 years at COVID-19 infection date
+    c) Sufficient follow up: $\geq$ 2 encounters with health system between 28-179 post-COVID-19 infection
 2) Classify patients as having conclusive, probable, or no evidence of Long COVID as follows:
         a) **Conclusive:** 
                 - 2+ PASC or MISC diagnoses (on separate dates)
