@@ -21,7 +21,7 @@ The CP is applied as follows:
         - 1 PASC or MISC diagnosis OR
         - $\geq$ 2 [symptom cluster](rules_application/specs/cluster_master_pasc.csv) diagnoses separated by $\geq$ 30 days
             - Note: respiratory and fever diagnoses are removed if occur within 14 days of another, non-COVID-19 respiratory infection
-                - Note: apply a [washout period](rules_application/specs/cluster_master_pasc_washout.csv) (30 days or 2 years, dependent on acute or chronic condition type) for conditions present prior to COVID-19 infection
+            - Note: apply a [washout period](rules_application/specs/cluster_master_pasc_washout.csv) (30 days or 2 years, dependent on acute or chronic condition type) for conditions present prior to COVID-19 infection
     3) **No evidence:** Does not meet the "conclusive" or "probable" classifications
 
 # Code Execution
