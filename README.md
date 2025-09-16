@@ -6,9 +6,9 @@ Computable phenotype development for Post-acute Sequelae of COVID-19 in children
 
 The PASC Computable Phenotype (CP) is intended to identify pediatric patients with Long COVID and assign a level of certainty of Long COVID (conclusive, probable, no evidence). The CP was developed against the RECOVER PCORnet EHR database, a large multi-site EHR dataset. The CP incorporates both diagnosis codes for Long COVID *and* symptom clusters more common in pediatric patients.
 
-# CP Steps
+# CP Definition
 
-Steps of the CP are as follows:
+The CP is applied as follows:
 
 1) Identify cohorts eligible for assessment:  
     1) Patients with COVID-19 infection: clinical diagnosis or PCR, antigen, or nucleocapsid serology test
@@ -31,6 +31,6 @@ Code is formatted using a standard R framework common across PEDSnet studies and
 This code is run downstream from RECOVER pipeline processes, including the Observation Derivation RECOVER (ODR) code which generates a table called `observation_derivation_recover` which is referenced throughout the PASC CP code. The ODR code is available in the [observation_derivation_recover_ml_phenotype](https://github.com/PEDSnet/PASC/tree/main/observation_derivation_recover_ml_phenotype) repository, following the same PEDSnet standard R framework format, where executable code is in the [driver.R](https://github.com/PEDSnet/PASC/blob/main/observation_derivation_recover_ml_phenotype/code/driver.R) file
 
 
-The PASC CP code is applied to the cohort in the [driver.R](code/driver.R) file. The code contains steps to identify an eligible cohort for analyses, determine a COVID-19 infection anchor date, determine observation windows around that anchor date, and assess likelihood of Long COVID on the patient level. Documentation throughout the code explains individual steps, and all study-specific functions are in the [cohorts](rules_application/code/cohorts.R) file. 
+The PASC CP code is applied to the cohort in the [driver.R](rules_application/code/driver.R) file. The code contains steps to identify an eligible cohort for analyses, determine a COVID-19 infection anchor date, determine observation windows around that anchor date, and assess likelihood of Long COVID on the patient level. Documentation throughout the code explains individual steps, and all study-specific functions are in the [cohorts](rules_application/code/cohorts.R) file. 
 
 The paper "Identifying Pediatric Long COVID: Comparing an EHR Algorithm to Manual Review" details the process of applying the CP and comparing against chart review. The paper has been accepted for publication and is currently in the production workflow (as of Sept 2025).
