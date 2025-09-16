@@ -35,3 +35,6 @@ This code is run downstream from RECOVER pipeline processes, including the Obser
 The PASC CP code is applied to the cohort in the [driver.R](rules_application/code/driver.R) file. The code contains steps to identify an eligible cohort for analyses, determine a COVID-19 infection anchor date, determine observation windows around that anchor date, and assess likelihood of Long COVID on the patient level. Documentation throughout the code explains individual steps, and all study-specific functions are in the [cohorts](rules_application/code/cohorts.R) file. 
 
 The paper "Identifying Pediatric Long COVID: Comparing an EHR Algorithm to Manual Review" details the process of applying the CP and comparing against chart review. The paper has been accepted for publication and is currently in the production workflow (as of Sept 2025).
+
+
+*This research was funded by the National Institutes of Health (NIH) Agreement OTA OT2HL161847-01 as part of the Researching COVID to Enhance Recovery (RECOVER) research Initiative.  The research reported in this work was conducted using PEDSnet, A Pediatric Clinical Research Network. PEDSnet has been developed with funding from the Patient-Centered Outcomes Research Institute (PCORI); PEDSnet’s participation in PCORnet is funded through PCORI award RI-CHOP-01-PS10.*
